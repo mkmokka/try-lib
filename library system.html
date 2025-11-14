@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Library</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('Librar.jpg'); /* Replace with your image file */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            color: white;
+            position: relative;
+        }
+
+        h1 {
+            margin-top: 40px;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        .btn {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 40px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 1);
+            color: white;
+            box-shadow: 2px 2px 5px black;
+        }
+
+        .btn:hover {
+            background-color: rgba(46, 89, 217, 0.9);
+        }
+
+        .member-btn {
+            width: 200px;
+        }
+
+        .admin-btn {
+            width: 300px;
+        }
+
+        .rules-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 8px 18px;
+            font-size: 14px;
+            background-color: rgba(28, 200, 138, 0.9);
+        }
+
+        .rules-btn:hover {
+            background-color: rgba(23, 166, 115, 0.9);
+        }
+
+        /* Bottom-left buttons */
+        .bottom-left-buttons {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Circular Feedback button with white text */
+        .circle-btn {
+            width: 80px;
+            height: 80px;
+            padding: 0;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;                /* Text color white */
+            background-color: rgba(0, 0, 0, 1);
+            box-shadow: 2px 2px 5px black;
+
+            display: flex;               /* Center text horizontally & vertically */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .circle-btn:hover {
+            background-color: rgba(46, 89, 217, 0.9);
+        }
+
+        .small-btn {
+            width: 160px;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn rules-btn" onclick="location.href='rules and regulations.js'">
+        Rules and Regulations
+    </button>
+
+    <h1>Friend Library</h1>
+
+    <div class="container">
+        <button class="btn member-btn" onclick="location.href='Member management.js'">
+            Member
+        </button>
+
+        <button class="btn admin-btn" onclick="location.href='Admin management.js'">
+            Admin
+        </button>
+    </div>
+
+    <!-- Bottom-left Buttons -->
+    <div class="bottom-left-buttons">
+
+        <!-- Circular Feedback Button -->
+        <button class="circle-btn" onclick="location.href='feedback.js'">
+            Feedback
+        </button>
+
+        <!-- Normal Help Button -->
+        <button class="btn small-btn" onclick="location.href='help.js'">
+            Help
+        </button>
+
+    </div>
+
+</body>
+</html>
